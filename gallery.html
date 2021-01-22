@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>krimydelight | Gallery</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading-image">
+      <img src="images/homebackground.png" alt="">
+    </div>
+    <nav>
+      <a href="index.html"><img class="logo-img" src="kdlogo.svg" alt="align box" ALIGN=CENTER></a>
+        <input type="checkbox" id="click">
+                <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="advocacy.html">ADVOCACY</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a class="active" href="gallery.html">GALLERY / PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        </nav>
+
+        <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+
+            <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio1.png)"></div>
+
+            <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <a href="portfolio1.html"><img alt="" src="images/logos/allseasons.png"></a>
+                </div>
+
+                <div class="subtitle">Designed the logo for All Seasons Notary Service in 2020.</div>
+            </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/YTHEN-msflawless.png)"></div>
+            <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <a href="portfolio2.html"><img alt="" src="images/logos/ythen.png"></a>
+                </div>
+
+                <div class="subtitle">Designed the logo for Ms. Sachzna Laparan's company,  Y THEN? in 2020.</div>
+            </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio3.png)"></div>
+            <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <a href="portfolio3.html"><img alt="" src="images/logos/shopshionista.png"></a>
+                </div>
+
+                <div class="subtitle">Logo designed for ShopShioniSta, in 2020.</div>
+            </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio4.png)"></div>
+            <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <a href="portfolio4.html"><img alt="" src="images/logos/drivewayfriendly.png"></a>
+                </div>
+
+                <div class="subtitle">Logo made for Driveway Friendly, a portable dumpster rental, in 2020.</div>
+            </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio5.png)"></div>
+            <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <a href="portfolio5.html"><img alt="" src="images/logos/snowpurple.png"></a>
+                </div>
+
+                <div class="subtitle">Logo made for SnowPurple, an IT consulting company, in 2020.</div>
+            </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio6.png)"></div>
+            <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <a href="portfolio6.html"><img alt="" src="images/logos/dentalservices.png"></a>
+                </div>
+
+                <div class="subtitle">Logo made for Legato, dental services department, in 2020.</div>
+            </div>
+            </div>
+        </div>
+        </div>
+  </div>
+</body>
+
+<footer>
+  <a href="https://www.instagram.com/krimydelight/?hl=en"><b>Instagram</b></a>
+  <p>© krimydelight | Abdul Karim Tawakim</p>
+</footer>
+
+<!-- Credits and kudos to Udemy, Jordan Hudgens for teaching this code script below for all to use, in YouTube.-->
+<script> 
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
